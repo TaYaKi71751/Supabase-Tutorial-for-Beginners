@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Supabase-Tutorial-for-Beginners/static/css/main.63e10004.css",
+    "main.js": "/Supabase-Tutorial-for-Beginners/static/js/main.c05fdb76.js",
+    "static/js/255.24247746.chunk.js": "/Supabase-Tutorial-for-Beginners/static/js/255.24247746.chunk.js",
+    "index.html": "/Supabase-Tutorial-for-Beginners/index.html",
+    "main.63e10004.css.map": "/Supabase-Tutorial-for-Beginners/static/css/main.63e10004.css.map",
+    "main.c05fdb76.js.map": "/Supabase-Tutorial-for-Beginners/static/js/main.c05fdb76.js.map",
+    "255.24247746.chunk.js.map": "/Supabase-Tutorial-for-Beginners/static/js/255.24247746.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63e10004.css",
+    "static/js/main.c05fdb76.js"
+  ]
+}
