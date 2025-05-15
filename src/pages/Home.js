@@ -5,8 +5,11 @@ import { useEffect, useState } from 'react'
 import SmoothieCard from '../components/SmoothieCard'
 
 const Home = () => {
+  // 에러 발생시 화면에 표시
   const [fetchError, setFetchError] = useState(null)
+  // supabase에서 데이터 읽어와서 저장
   const [smoothies, setSmoothies] = useState(null)
+  // 정렬
   const [orderBy, setOrderBy] = useState('created_at')
 
   const handleDelete = (id) => {
@@ -17,11 +20,14 @@ const Home = () => {
 
   useEffect(() => {
     const fetchSmoothies = async () => {
+			// supabase에서 데이터 읽어오기
+			// orderBy에 따라 정렬
+			// ascending: false로 내림차순 정렬
       const { data, error } = await supabase
         .from('recipes')
         .select()
-        .order(orderBy, {ascending: false})
-      
+        .order(orderBy, { ascending: false })
+
       if (error) {
         setFetchError('Could not fetch the smoothies')
         setSmoothies(null)
